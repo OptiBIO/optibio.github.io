@@ -6,116 +6,15 @@
     <title>OptiBIO - Coming Soon</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Urbanist', sans-serif;
-            background-color: #303030; /* Dark grey background */
-            color: #FFFFFF; /* White text */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            text-align: center;
-            max-width: 500px;
-            width: 90%;
-        }
-
-        h1 {
-            font-size: 3em;
-            color: #EDFF8C; /* Light yellow-green heading */
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 1.2em;
-            color: #CFE1CA; /* Soft greenish color for paragraph text */
-            margin-bottom: 30px;
-        }
-
-        .form-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .input-group {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            max-width: 400px;
-        }
-
-        input[type="email"] {
-            padding: 15px;
-            font-size: 1em;
-            border: none;
-            border-radius: 5px;
-            background-color: #404040; /* Slightly lighter grey for input fields */
-            color: #FFFFFF;
-            width: 70%; /* Input takes 75% of the width */
-        }
-
-        button {
-            padding: 15px;
-            font-size: 1em;
-            border: none;
-            border-radius: 5px;
-            background-color: #EDFF8C; /* Matching the button with the heading color */
-            color: #303030;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            width: 30%; /* Button takes 30% of the width */
-        }
-
-        button:hover {
-            background-color: #CFE1CA; /* Button hover effect */
-        }
-
-        .social-login {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
-        }
-
-        .social-login img {
-            width: 40px;
-            height: 40px;
-        }
-
-        footer {
-            font-size: 0.9em;
-            color: #CFE1CA; /* Footer color matching the paragraph text */
-            margin-top: 20px;
-        }
-
-    </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>OptiBIO</h1>
-        <p>Love Your Health, Live Your Best</p>
-        <p>Sign up now to get notified when we launch!</p>
+        <form action="https://app.convertkit.com/forms/YOUR_FORM_ID/subscriptions" method="post">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <button type="submit">Notify Me</button>
+</form>
 
-        <div class="form-container">
-            <div class="input-group">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Notify Me</button>
-            </div>
-        </div>
-
-        <div class="social-login">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/apple-logo.png" alt="Apple Login">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/google-logo.png" alt="Google Login">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/microsoft.png" alt="Microsoft Login">
-        </div>
 
         <footer>
             We respect your privacy. Your email is safe with us.
