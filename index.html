@@ -73,7 +73,6 @@
             try {
                 const response = await fetch('https://api.hubapi.com/submissions/v3/integration/submit/145557673/d1f70ed5-b554-42a5-95bc-1e0ba0255bd5', {
                     method: 'POST',
-                    mode: 'no-cors',
                     headers: {
                         'Content-Type': 'application/json',
                         'Authorization': 'Bearer ${{ secrets.SuperSecret }}'  // Replace with the actual API token
